@@ -5,20 +5,20 @@
 
 using namespace Rcpp;
 
-// openDB
-Rcpp::List openDB(std::string dbfilename);
-RcppExport SEXP _unqlite_openDB(SEXP dbfilenameSEXP) {
+// c_openDB
+Rcpp::List c_openDB(std::string dbfilename);
+RcppExport SEXP _unqlite_c_openDB(SEXP dbfilenameSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< std::string >::type dbfilename(dbfilenameSEXP);
-    rcpp_result_gen = Rcpp::wrap(openDB(dbfilename));
+    rcpp_result_gen = Rcpp::wrap(c_openDB(dbfilename));
     return rcpp_result_gen;
 END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_unqlite_openDB", (DL_FUNC) &_unqlite_openDB, 1},
+    {"_unqlite_c_openDB", (DL_FUNC) &_unqlite_c_openDB, 1},
     {NULL, NULL, 0}
 };
 
