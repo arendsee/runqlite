@@ -13,14 +13,13 @@ NULL
 #' @return UnqliteConnection object
 #' @export
 unqlite_open <- function(filename){
-  db <- c_openDB(filename) 
-  ## TODO: once I get the linking working, I can use the code below to build
-  ## the real db object
-  # new('UnqliteConnection',
-  #   dbptr = db[[1]],
-  #   cursor = db[[2]]
-  # )
-  db
+  db     <- c_openDB(filename)
+  dbptr  <- db[[1]]
+  cursor <- db[[2]]
+  new('UnqliteConnection',
+    dbptr = dbptr,
+    cursor = as.integer(cursor)
+  )
 }
 
 #' Close a database connection
