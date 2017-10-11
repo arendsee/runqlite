@@ -4,5 +4,12 @@ NULL
 
 #' @export
 openDB <- function(filename){
-  c_openDB(filename) 
+  db <- c_openDB(filename) 
+  ## TODO: once I get the linking working, I can use the code below to build
+  ## the real db object
+  # new('UnqliteConnection',
+  #   dbptr = db[[1]],
+  #   cursor = db[[2]]
+  # )
+  db
 }
