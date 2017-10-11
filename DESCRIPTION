@@ -1,0 +1,10 @@
+Package: unqlite
+Title: R binding for unqlite databases
+Version: 0.0.0.9000
+Authors@R: person("Zebulun", "Arendsee", email = "zbwrnz@gmail.com", role = c("aut", "cre"))
+Description:
+    R binding for unqlite databases
+Depends: R (>= 3.4.2)
+License: GPL-3 + file LICENSE
+Encoding: UTF-8
+LazyData: true
