@@ -13,7 +13,7 @@ NULL
 #' @return UnqliteConnection object
 #' @export
 unqlite_open <- function(filename){
-  db     <- c_openDB(filename)
+  db     <- c_unqlite_open(filename)
   dbptr  <- db[[1]]
   cursor <- db[[2]]
   new('UnqliteConnection',

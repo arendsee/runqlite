@@ -5,7 +5,7 @@ extern "C" {
 #include <Rcpp.h>
 
 // [[Rcpp::export]]
-Rcpp::List c_openDB(std::string dbfilename){
+Rcpp::List c_unqlite_open(std::string dbfilename){
 
     unqlite *pDb;
 
