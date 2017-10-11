@@ -1,4 +1,4 @@
-Package: unqlite
+Package: runqlite
 Title: R Binding for UnQLite Databases
 Version: 0.0.0.9000
 Authors@R: person("Zebulun", "Arendsee", email = "zbwrnz@gmail.com", role = c("aut", "cre"))

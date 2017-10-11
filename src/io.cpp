@@ -26,8 +26,11 @@ Rcpp::List c_openDB(std::string dbfilename){
 
 }
 
+// // [[Rcpp::export]]
+// void c_unqlite_close(Rcpp::XPtr<unqlite> db_ref){
+//     unqlite_close(*db_ref);
+// }
 
-// c_closeDB
 // c_unqlite_kv_store
 // c_unqlite_kv_delete
 // c_unqlite_kv_fetch

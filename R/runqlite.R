@@ -27,7 +27,7 @@ unqlite_open <- function(filename){
 #' @param db UnqliteConnection object to be closed
 #' @export
 unqlite_close <- function(db){
-  c_closeDB(db$dbptr)
+  c_unqlite_close(db$dbptr)
 }
 
 
@@ -69,7 +69,7 @@ unqlite_kv_fetch <- function(db, key){
 
 # TODO: replace these stubs with C++ functions (for which R wrappers will be
 # automatically generated)
-c_closeDB           <- function(...){}
+c_unqlite_close     <- function(...){}
 c_unqlite_kv_store  <- function(...){}
 c_unqlite_kv_delete <- function(...){}
 c_unqlite_kv_fetch  <- function(...){}

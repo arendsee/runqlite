@@ -1,4 +1,4 @@
-# unqlite
+# runqlite
 
 Create and access unqlite databases.
 
