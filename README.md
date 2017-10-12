@@ -1,3 +1,5 @@
+[![Travis-CI Build Status](https://travis-ci.org/arendsee/runqlite.svg?branch=master)](https://travis-ci.org/arendsee/runqlite)
+
 # runqlite
 
 Create and access unqlite databases.
